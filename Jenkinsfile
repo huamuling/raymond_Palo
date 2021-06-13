@@ -6,7 +6,7 @@ pipeline {
     environment{
         PATH = "/opt/maven/bin:$PATH"
 }
-
+  stages {
       stage('Build Code using Maven') {
             steps{
                 sh "mvn package"
