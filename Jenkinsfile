@@ -12,6 +12,13 @@ pipeline {
                 sh "mvn package"
             }
         }
+
+ stage('QA/UAT') {
+            steps {
+           sh "echo For QA team to do their test steps........."          
+            }
+        }
+
         stage('Deploy on Tomcat server') {
             steps{
                 sshagent(['deployer_user1']) {
