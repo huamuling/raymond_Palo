@@ -7,16 +7,7 @@ pipeline {
         PATH = "/opt/maven/bin:$PATH"
 }
 
-    stages {
-        stage('Pull Code from Git') {
-            steps {
-                
-                // Get code from a GitHub repository
-                git 'https://github.com/huamuling/raymond_Palo.git'
-                
-            }
-        }
-        stage('Build Code using Maven') {
+      stage('Build Code using Maven') {
             steps{
                 sh "mvn package"
             }
