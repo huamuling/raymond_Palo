@@ -12,7 +12,7 @@ pipeline {
             steps {
                 
                 // Get code from a GitHub repository
-                git 'https://github.com/huamuling/Palo-project.git'
+                git 'https://github.com/huamuling/raymond_Palo.git'
                 
             }
         }
